@@ -26,7 +26,9 @@ const Cryptocurrencies = ({ simplified }) => {
 
 	return (
 		<>
-			<h2 className="text-3xl font-bold my-5">Top 100 Cryptocurrencies</h2>
+			{!simplified && (
+				<h2 className="text-3xl font-bold my-5">Top 100 Cryptocurrencies</h2>
+			)}
 			{!simplified && (
 				<div className="mt-5 text-center">
 					<input

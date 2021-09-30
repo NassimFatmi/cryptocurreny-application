@@ -21,6 +21,9 @@ const News = ({ simplified }) => {
 
 	return (
 		<>
+			{!simplified && (
+				<h2 className="text-3xl font-bold my-5">Latest Crypto news</h2>
+			)}
 			{isFetching ? (
 				<Loading />
 			) : (
